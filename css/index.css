@@ -3,10 +3,7 @@
    License: none (public domain) */
 
 * {
-  /* background-color: black; */
-  /* border: 2px solid rgb(50, 39, 204);
-
- */
+  color: white;
 }
 
 html,
@@ -208,9 +205,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 8vw;
-}
-.icons i {
-  /* justify-items: center; */
+  padding: 2%;
 }
 
 /* spacers */
@@ -232,7 +227,15 @@ header {
   text-align: center;
   background-color: rgb(0, 4, 17);
 }
-
+.gallery h2 {
+  color: white;
+}
+.yemeklerimg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1vw;
+}
 /* about us section */
 .about {
   width: 100%;
@@ -255,10 +258,18 @@ header {
 
 .about h2 {
   width: 100%;
+  color: white;
+  text-align: center;
+  margin-top: 10%;
 }
 
 .about-container .text {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin-top: 20%;
 }
 
 /* contact us section */
@@ -275,6 +286,9 @@ header {
   width: 100%;
   height: 100%;
   background-color: rgb(0, 4, 17, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact h2 {
@@ -314,8 +328,29 @@ footer {
   height: 15vh;
   padding-top: 2.5vh;
   font-size: 3rem;
+  color: white;
+  background-color: black;
 }
-
+footer nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn1 {
+  margin-left: 2%;
+  background-color: white;
+  color: grey;
+  border: 0rem;
+  width: 10vw;
+  height: 3vh;
+  margin-bottom: 2%;
+}
+.btn2 {
+  color: black;
+  border: 0rem;
+  width: 5vw;
+  height: 3vh;
+  margin-bottom: 2%;
+}
 /* mobile media query */
 @media (max-width: 428px) {
   /* header section */
