@@ -256,15 +256,23 @@ header {
 }
 
 /* footer section */
+
 footer {
   width: 100%;
   height: 15vh;
   padding-top: 2.5vh;
   font-size: 3rem;
+  color: white;
+  background-color: black;
 }
+
 footer nav {
   display: flex;
   justify-content: space-evenly;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
 }
 .btn1 {
   margin-left: 2%;
@@ -281,6 +289,12 @@ footer nav {
   width: 5vw;
   height: 3vh;
   margin-bottom: 2%;
+}
+
+.footer a {
+  font-size: 2rem;
+  padding-top: 1%;
+  padding-left: 40%;
 }
 
 /* mobile media query */
