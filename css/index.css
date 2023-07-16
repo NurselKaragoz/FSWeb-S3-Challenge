@@ -198,13 +198,13 @@ header {
   color: white;
 }
 .icons {
-  margin-top: 2%;
+  /* margin-top: 2%; */
   font-size: x-large;
   color: white;
   display: flex;
   justify-content: center;
   gap: 8vw;
-  padding: 2%;
+  padding: 0.7rem;
 }
 
 /* spacers */
@@ -221,14 +221,12 @@ header {
 
 /* gallery section */
 .gallery {
-  width: 100%;
-  height: 100vh;
+  /* width: 100%;
+  height: 100vh; */
   text-align: center;
   background-color: rgb(0, 4, 17);
 }
-.gallery h2 {
-  color: white;
-}
+
 .yemeklerimg {
   display: flex;
   flex-wrap: wrap;
@@ -249,26 +247,24 @@ header {
 .about-container {
   height: 100%;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: rgb(0, 4, 17, 0.8);
 }
 
-.about h2 {
-  width: 100%;
-  color: white;
-  text-align: center;
-  margin-top: 10%;
+.about-container h2 {
+  padding-bottom: 8%;
+}
+.about-container h3 {
+  padding-bottom: 1vw;
 }
 
-.about-container .text {
-  width: 50%;
+.about-container p {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
-  margin-top: 20%;
+  width: 50vw;
+  /* margin-top: 20%; */
 }
 
 /* contact us section */
@@ -332,7 +328,12 @@ footer {
 }
 footer nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
 }
 .btn1 {
   margin-left: 2%;
@@ -350,12 +351,13 @@ footer nav {
   height: 3vh;
   margin-bottom: 2%;
 }
-.altyazı {
-  display: flex;
-  justify-content: flex-end;
-  /* margin-top: 10%; */
-  border: 3rem solid red;
+
+.footer a {
+  font-size: 2rem;
+  padding-top: 1%;
+  padding-left: 40%;
 }
+
 /* mobile media query */
 @media (max-width: 428px) {
   /* header section */

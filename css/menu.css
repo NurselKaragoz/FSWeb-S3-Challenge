@@ -240,19 +240,19 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 .menu-section {
   display: flex;
   flex-direction: column;
+
   width: 50%;
 }
+
 .menu-item {
   display: flex;
   flex-direction: row;
   align-content: space-between;
-  margin-top: 10%;
-  gap: 10%;
 }
 
 /* footer section */
