@@ -4,6 +4,7 @@
 */
 * {
   color: white;
+  border: 2rem solid red;
 }
 
 html,
@@ -233,28 +234,39 @@ header {
   background-repeat: no-repeat;
 }
 .menu h3 {
-  margin-bottom: 2%;
-  text-align: center;
+  /* padding-bottom: 2%; */
+  /* text-align: center; */
 }
 .menu-container {
   display: flex;
   flex-direction: row;
+
   flex-wrap: wrap;
   justify-content: flex-start;
+  align-content: center;
 }
 .menu-section {
   display: flex;
-  flex-direction: column;
+  grid: auto / auto auto;
 
+  flex-direction: column;
   width: 50%;
+  align-content: center;
 }
 
 .menu-item {
   display: flex;
   flex-direction: row;
   align-content: space-between;
+  column-gap: 10px;
 }
-
+.child :last-child {
+  text-align: center;
+  color: blue;
+}
+/* #price {
+  padding-left: 10%;
+} */
 /* footer section */
 
 footer {
