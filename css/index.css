@@ -161,7 +161,6 @@ i {
 
 h1 {
   font-size: 7.5rem;
-  color: white;
 }
 
 h2 {
@@ -350,6 +349,12 @@ footer nav {
   width: 5vw;
   height: 3vh;
   margin-bottom: 2%;
+}
+.altyazı {
+  display: flex;
+  justify-content: flex-end;
+  /* margin-top: 10%; */
+  border: 3rem solid red;
 }
 /* mobile media query */
 @media (max-width: 428px) {
