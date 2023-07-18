@@ -236,7 +236,7 @@ header {
 /* about us section */
 .about {
   width: 100%;
-  height: 75vh;
+  min-height: 75vh;
   text-align: center;
   background-image: url("../img/staff-cooks.jpg");
   background-size: cover;
@@ -247,22 +247,19 @@ header {
 .about-container {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
   align-items: center;
   background-color: rgb(0, 4, 17, 0.8);
 }
-
+.text-about {
+  margin-left: 20%;
+  margin-right: 20%;
+}
 /* .about-container h2 {
   padding-bottom: 8%;
 }
 .about-container h3 {
   padding-bottom: 1vw;
 } */
-
-.about-container p {
-  width: 60%;
-}
 
 /* contact us section */
 .contact {
@@ -323,9 +320,9 @@ footer {
   color: white;
   background-color: black;
 }
+
 footer nav {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
 }
 .footer {
@@ -358,6 +355,10 @@ footer nav {
 /* mobile media query */
 @media (max-width: 428px) {
   /* header section */
+  .navbar nav {
+    display: flex;
+    flex-direction: column;
+  }
 
   /* gallery section */
   .gallery {
@@ -367,7 +368,7 @@ footer nav {
   /* about us section */
 
   .about {
-    height: 200vh;
+    min-height: 200vh;
   }
 
   .about h2 {
@@ -407,5 +408,8 @@ footer nav {
     height: auto;
     padding-top: 2.5vh;
     font-size: 2rem;
+  }
+  .contact-container {
+    flex-direction: column;
   }
 }

@@ -326,6 +326,13 @@ footer nav {
   .menu {
     background-image: none;
   }
+  .navbar nav {
+    flex-direction: column;
+  }
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
 
   /* footer section */
   footer {
